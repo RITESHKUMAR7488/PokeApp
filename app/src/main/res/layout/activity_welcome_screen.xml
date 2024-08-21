@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".WelcomeScreen">
+
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/pikachu"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_bold"
+            android:text="Start Discovering"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:textColor="#2E3E5C" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_medium"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:layout_marginTop="30dp"
+            android:text="Let’s get deep in the world of Pokemons"
+            android:textColor="#9FA5C0" />
+        <Button
+            android:id="@+id/btn_Start"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#1FCC79"
+            android:text="Get Started"
+            android:fontFamily="@font/inter_bold"
+            android:textSize="15dp"
+            android:paddingHorizontal="100dp"
+            android:paddingVertical="15dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</layout>

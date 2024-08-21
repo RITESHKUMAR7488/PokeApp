@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".SignUp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome Back !"
+            android:fontFamily="@font/inter_bold"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:layout_marginTop="120dp"
+            android:textColor="#2E3E5C"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please enter you account here"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/inter_medium"
+            android:textSize="15sp"
+            android:textColor="#9FA5C0"
+            android:gravity="center"
+            />
+        <EditText
+            android:id="@+id/et_Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boxes"
+            android:layout_marginTop="30dp"
+            android:drawableLeft="@drawable/message"
+            android:layout_marginHorizontal="30dp"
+            android:hint="Email or Phone Number"
+            android:padding="15dp"
+            android:drawablePadding="30dp"
+            android:fontFamily="@font/inter_medium"
+            />
+        <EditText
+            android:id="@+id/et_Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boxes"
+            android:layout_marginTop="30dp"
+            android:drawableLeft="@drawable/lock"
+            android:layout_marginHorizontal="30dp"
+            android:hint="Password"
+            android:padding="15dp"
+            android:drawablePadding="30dp"
+
+            android:fontFamily="@font/inter_medium"
+            />
+        <TextView
+            android:id="@+id/tx_Forgot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/inter_medium"
+            android:textSize="15sp"
+            android:textColor="#2E3E5C"
+            android:gravity="right"
+            android:layout_marginEnd="30dp"
+            />
+
+        <Button
+            android:id="@+id/btn_Login"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#1FCC79"
+            android:text="Login"
+            android:fontFamily="@font/inter_bold"
+            android:textSize="15dp"
+            android:paddingHorizontal="100dp"
+            android:paddingVertical="15dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="or continue with"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/inter_medium"
+            android:textSize="15sp"
+            android:textColor="#9FA5C0"
+            android:gravity="center"
+            />
+        <Button
+            android:id="@+id/btn_Google"
+            android:drawableLeft="@drawable/google"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#FF5842"
+            android:text="Google"
+            android:fontFamily="@font/inter_bold"
+            android:textSize="15dp"
+            android:paddingHorizontal="100dp"
+            android:paddingVertical="15dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't have an account?"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="90dp"
+                android:fontFamily="@font/inter_medium"
+                android:textSize="15sp"
+                android:textColor="#2E3E5C"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/tx_SignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/inter_medium"
+                android:textSize="15sp"
+                android:textColor="#1FCC79"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</layout>

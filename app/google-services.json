@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "686597813938",
+    "project_id": "pokeapp-296a8",
+    "storage_bucket": "pokeapp-296a8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:686597813938:android:e59ff8ec3df6575d983bab",
+        "android_client_info": {
+          "package_name": "com.example.spice"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNZ1onU-A1JqKi1M3uRASx5GJmaLuIICc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

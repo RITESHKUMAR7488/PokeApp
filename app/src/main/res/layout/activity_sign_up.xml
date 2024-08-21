@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".SignUp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome !"
+            android:fontFamily="@font/inter_bold"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:layout_marginTop="172dp"
+            android:textColor="#2E3E5C"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please enter you account here"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/inter_medium"
+            android:textSize="15sp"
+            android:textColor="#9FA5C0"
+            android:gravity="center"
+            />
+        <EditText
+            android:id="@+id/et_Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boxes"
+            android:layout_marginTop="30dp"
+            android:drawableLeft="@drawable/message"
+            android:layout_marginHorizontal="30dp"
+            android:hint="Email or Phone Number"
+            android:padding="15dp"
+            android:drawablePadding="30dp"
+            android:fontFamily="@font/inter_medium"
+            />
+        <EditText
+            android:id="@+id/et_Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boxes"
+            android:layout_marginTop="30dp"
+            android:drawableLeft="@drawable/lock"
+            android:layout_marginHorizontal="30dp"
+            android:hint="Password"
+            android:padding="15dp"
+            android:drawablePadding="30dp"
+            android:fontFamily="@font/inter_medium"
+            />
+
+        <Button
+            android:id="@+id/btn_SignUp"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#1FCC79"
+            android:text="Sign Up"
+            android:fontFamily="@font/inter_bold"
+            android:textSize="15dp"
+            android:paddingHorizontal="100dp"
+            android:paddingVertical="15dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+</layout>
