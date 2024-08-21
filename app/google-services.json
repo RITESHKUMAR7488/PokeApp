@@ -12,7 +12,20 @@
           "package_name": "com.example.spice"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "686597813938-47dcqm2u4dg3div1s5t1hbb8e3pact0o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.spice",
+            "certificate_hash": "cb3d3db7db96f646195417a73ee35f30bc81988a"
+          }
+        },
+        {
+          "client_id": "686597813938-fdka11o4jldvei25d1ls7gb9a9st7il8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyDNZ1onU-A1JqKi1M3uRASx5GJmaLuIICc"
@@ -20,7 +33,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "686597813938-fdka11o4jldvei25d1ls7gb9a9st7il8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
