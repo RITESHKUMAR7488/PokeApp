@@ -21,43 +21,46 @@ class SignIn : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = DataBindingUtil.setContentView(this, R.layout.activity_sign_in)
 
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_sign_in)
         auth = FirebaseAuth.getInstance()
 
+        // Configure Google Sign-In options
         val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-            .requestIdToken(getString(R.string.your_web_client_id)) // Replace with your web client ID
+            .requestIdToken("794262091891-fd5nbc5vc3dnds7ffu2uatdu1d6rbagu.apps.googleusercontent.com")
             .requestEmail()
             .build()
 
         val googleSignInClient = GoogleSignIn.getClient(this, gso)
 
-        binding.btnGoogle.setOnClickListener {
-            val signInIntent = googleSignInClient.signInIntent
-            launcher.launch(signInIntent)
-        }
-
-        binding.btnLogin.setOnClickListener {
-            val userEmail = binding.etEmail.text.toString().trim()
-            val userPassword = binding.etPassword.text.toString().trim()
-            if (userEmail.isBlank() || userPassword.isBlank()) {
-                Toast.makeText(this, "Please fill all the blanks", Toast.LENGTH_SHORT).show()
-            } else {
-                auth.signInWithEmailAndPassword(userEmail, userPassword)
-                    .addOnCompleteListener(this) { task ->
-                        if (task.isSuccessful) {
-                            Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show()
-                            startActivity(Intent(this, MainActivity::class.java))
-                            finish()
-                        } else {
-                            Toast.makeText(this, "Login Failed: ${task.exception?.message}", Toast.LENGTH_SHORT).show()
-                        }
-                    }
+        with(binding) {
+            btnGoogle.setOnClickListener {
+                val signInIntent = googleSignInClient.signInIntent
+                launcher.launch(signInIntent)
             }
-        }
 
-        binding.txSignUp.setOnClickListener {
-            startActivity(Intent(this, MainActivity::class.java))
+            btnLogin.setOnClickListener {
+                val userEmail = etEmail.text.toString().trim()
+                val userPassword = etPassword.text.toString().trim()
+                if (userEmail.isBlank() || userPassword.isBlank()) {
+                    Toast.makeText(this@SignIn, "Please fill all the blanks", Toast.LENGTH_SHORT).show()
+                } else {
+                    auth.signInWithEmailAndPassword(userEmail, userPassword)
+                        .addOnCompleteListener(this@SignIn) { task ->
+                            if (task.isSuccessful) {
+                                Toast.makeText(this@SignIn, "Login Successful", Toast.LENGTH_SHORT).show()
+                                startActivity(Intent(this@SignIn, MainActivity::class.java))
+                                finish()
+                            } else {
+                                Toast.makeText(this@SignIn, "Login Failed: ${task.exception?.message}", Toast.LENGTH_SHORT).show()
+                            }
+                        }
+                }
+            }
+
+            txSignUp.setOnClickListener {
+                startActivity(Intent(this@SignIn, MainActivity::class.java))
+            }
         }
     }
 
